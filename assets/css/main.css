@@ -71,19 +71,23 @@ p.info-text{
 form.user-info{
     width: 536px;
     height: 45px;
+    display: flex;
 }
-form > input{
+form > .form-input > input{
     width: 320px;
     height: 45px;
     border: 1px solid #07043B;
     border-radius: 3px;
     color: #c2c2c2;
-    /* padding-left: 20px; */
+    font-family: 'Open Sans', sans-serif;
+    line-height: 19px;
+    letter-spacing: 0.466667px;
+    padding-left: 20px; 
 }
 form > button{
     width: 200px;
     height: 45px;
-    /* margin-left: 4px; */
+    margin-left: 20px;
     font-family: 'Raleway', sans-serif;
     color: #fff;
     background-color: #2F65F8;
