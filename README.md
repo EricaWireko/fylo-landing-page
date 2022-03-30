@@ -25,7 +25,7 @@ Your users should be able to:
 
 ### The Designs
 
-The designs I had to follow can be found here: [Screenshots of the designs](https://drive.google.com/uc?id=1JOlV_rZTZTYoOVYijY9SS_zqqUjKhmEE)
+The designs I had to follow can be found here: [Screenshots of the designs](https://drive.google.com/uc?id=1JZ2R8y_wDIftWlyueVfI3pR9Kyko6wDw)
 
 
 
