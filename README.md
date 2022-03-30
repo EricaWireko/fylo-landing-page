@@ -25,7 +25,8 @@ Your users should be able to:
 
 ### The Designs
 
-The designs I had to follow can be found here: [Screenshots of the designs](https://drive.google.com/uc?id=1QBImajy9fQtEVCPH6h7wZ2E4UZw9h28S)
+The designs I had to follow can be found here: [Screenshots of the designs](https://drive.google.com/uc?id=1JOlV_rZTZTYoOVYijY9SS_zqqUjKhmEE)
+
 
 
 ## My Process
