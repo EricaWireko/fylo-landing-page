@@ -1,0 +1,36 @@
+header#header{
+    width: 1280px;
+    height: 49px;
+    /* background-color: grey; */
+    position: absolute;
+    left: 80px;
+    top: 65px;
+    display: flex;
+    flex-direction: row;
+}
+div.logo{
+    width: 166px;
+    height: 49px;
+}
+div#nav-bar{
+    width: 271px;
+    height: 19px;
+    position: absolute;
+    left: 1005px;
+    top: 15px;
+}
+ div > ul{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    position: relative;
+    top: -15px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 18.78px;
+    
+}
+a.nav-link{
+    text-decoration: none;
+    color: #07043B;
+}
