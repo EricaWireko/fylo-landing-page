@@ -94,3 +94,17 @@ form > button{
     border-color: #2F65F8;
     border-radius: 3px;
 }
+div.productive{
+    width: 1440px;
+    height: 838px;
+    position: absolute;
+    left: 0px;
+    top: 838px;
+    /* */
+}
+div.more-productive{
+    background-color: #F8F8FE; 
+    /* border: 1px solid yellow; */
+    height: 724px;
+    margin-top: -5px;
+}
