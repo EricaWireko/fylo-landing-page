@@ -31,7 +31,7 @@ The designs I had to follow can be found here: [Screenshots of the designs](http
 
 ## My Process
 
-I used the figma design file for design specifications. I created a simple HTML page, added a README file and the stylesheet.
+I used the figma design file for design specifications. I created a simple HTML page, added a README file and the CSS stylesheet.
 
 ### Built With
 
