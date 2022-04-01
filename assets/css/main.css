@@ -387,3 +387,140 @@ footer.footer{
     top: 1944px;
     background-color: #07043b;
 }
+div.footer-icons{
+    width: 119.79px;
+    height: 31px;
+    position: absolute;
+    left: 1059px;
+    top: 170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+div.oval{
+    width: 31.22px;
+    height: 31px;
+    border: 0.918357px solid #dfe4f0;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+img#fb-icon{
+    /* width: 7.03px;
+    height: 14.73px; */
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    width: 25%;
+}
+img#tw-icon{
+    position: absolute;
+    width: 20%;
+    top: 5px;
+    left: 49px;
+}
+img#in-icon{
+    position: absolute;
+    width: 18%;
+    left: 89.4px;
+    top: 4px;
+}
+div.legal{
+    width: 81px;
+    height: 98px;
+    position: absolute;
+    left: 793px;
+    top: 150px;
+}
+div.legal > a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+p#terms{
+    width: 47px;
+    margin-top: 30px;
+}
+p#privacy{
+    width: 53px;
+    margin-top: 30px;
+}
+div.our-company{
+    width: 69px;
+    height: 136px;
+    position: absolute;
+    left: 524px;
+    top: 150px;
+}
+div.our-company > a{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+p#about-us, p#jobs, p#press, p#blog{
+    margin-top: 20px;
+}
+div.contact-card{
+    width: 222px;
+    height: 140px;
+    position: absolute;
+    left: 80px;
+    top: 92px;
+}
+div.contact-card > a#home >img{
+    width: 135px;
+    height: 39px;
+}
+div.phone{
+    display: flex;
+    width: 222px;
+    height: 25px;
+    position: absolute;
+    left: 0%;
+    top: 70px;
+}
+ div.ph-icon, div.email-icon{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0%;
+    /* right: 89.19%;
+    top: 80px; */
+}
+p.phone-number{
+    width: 182px;
+    height: 24px;
+    position: absolute;
+    left: 35px;
+    top: -18px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+} 
+div.email{
+    display: flex;
+    width: 182px;
+    height: 25px;
+    position: absolute;
+    left: 0%;
+    top: 110px;
+}
+p.email{
+    width: 142px;
+    height: 42px;
+    position: absolute;
+    left: 35px;
+    top: -20px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
