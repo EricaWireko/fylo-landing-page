@@ -31,14 +31,14 @@
         </div>
         <form action="" class="user-info">
             <div class="form-input">
-                <input type="text" placeholder="Enter your email...">
+                <input type="email" id="email" placeholder="Enter your email..." required="" oninvalid="this.setCustomValidity('Please check your email')" oninput="this.setCustomValidity('')">
             </div>
-            <button type="submit">Get Started</button>
+            <button type="submit" for="email" id="email-btn">Get Started</button>
         </form>
    </div>
    <div class="productive">
         <div class="productive-image">
-            <img src="assets\images\bg-curve-desktop.svg" alt="">
+            <img src="assets\images\bg-curve-desktop.svg" alt="" id="productive-image">
         </div>
         <div class="more-productive">
             <img src="assets\images\illustration-2.svg" alt="" id="productive-img">
@@ -87,10 +87,10 @@
         <div class="cta-form-group">
             <form action="" class="cta-form">
                 <div class="cta-form-input">
-                    <input type="text" placeholder="email@example.com">
+                    <input type="email" placeholder="email@example.com" id="email-two" required="" oninvalid="this.setCustomValidity('Please check your email')" oninput="this.setCustomValidity('')">
                 </div>
                 <div class="cta-form-button">
-                    <button type="submit" id="cta-form-button">Get Started For Free</button>
+                    <button type="submit" for="email-two" id="cta-form-button">Get Started For Free</button>
                 </div>
             </form>
         </div>

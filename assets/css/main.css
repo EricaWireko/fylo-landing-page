@@ -30,6 +30,9 @@ div#nav-bar{
     line-height: 18.78px;
     
 }
+a:hover{
+    cursor: pointer;
+}
 a.nav-link{
     text-decoration: none;
     color: #07043B;
@@ -83,6 +86,10 @@ form > .form-input > input{
     line-height: 19px;
     letter-spacing: 0.466667px;
     padding-left: 20px; 
+}
+
+button:hover{
+    cursor: pointer;
 }
 form > button{
     width: 200px;
@@ -177,6 +184,9 @@ p.more-productive-details-text{
     font-size: 16px;
     line-height: 21.79px;
 } 
+p.more-productive-details-text:hover{
+    cursor: pointer;
+}
 div#rectangle{
     width: 166px;
     height: 1px;
@@ -196,6 +206,9 @@ div.testimonial{
     right: 69.72%;
     top: 55.13%;
     bottom: 19.21%;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 5px rgba(56, 56, 56, 0.0458843);
+    border-radius: 5px;
 }
 p#qt-mark{
     width: 18px;
@@ -524,4 +537,327 @@ p.email{
     font-weight: 400;
     font-size: 16px;
     color: #fff;
+}
+@media (min-width: 375px) and (max-width: 480px){
+    header#header{
+        width: 327px;
+        height: 24px;
+        position: absolute;
+        left: 24px;
+        top: 24px;
+    }
+    div.logo{
+        width: 80px;
+        height: 24px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    a#home > img{
+        width: 72.29px;
+        height: 24px;
+    }
+    div#nav-bar{
+        width: 247px;
+        height: 24px;
+        position: absolute;
+        left: 80px;
+        top: 0px;
+    }
+    div#hero-section{
+        width: 320px;
+        height: 609px;
+        left: 21px;
+        top: 146px;
+    }
+    div > #hero-img{
+        width: 320px;
+        height: 225px;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    p.heading{
+        width: 320px;
+        height: 108px;
+        position: absolute;
+        left: 0px;
+        top: 200px;
+        text-align: center;
+        font-size: 24px;
+        line-height: 36px;
+    }
+    p.info-text{
+        width: 296px;
+        height: 84px;
+        position: absolute;
+        left: 7.5px;
+        top: 375px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    /* form.user-info{
+        width: 328px;
+        height: 96px;
+        position: absolute;
+        left: 28px;
+        top: 695px;
+        display: flex;
+        flex-direction: column;
+    } */
+    form > .form-input > input#email{
+        width: 280px;
+        height: 40px;
+        position: absolute;
+        left: 7.5px;
+        top: 490px;
+    }
+    form > button#email-btn{
+        width: 304px;
+        height: 44px;
+        position: absolute;
+        left: -12.5px;
+        top: 550px;
+    }
+    /* input#email{
+        width: 305px;
+        height: 40px;
+        position: absolute;
+        left: 38px;
+        top: 695px;
+    } */
+    div.productive{
+        width: 375px;
+        height: 961px;
+        position: absolute;
+        left: 0px;
+        top: 827px;
+    }
+    div.more-productive{
+        height: 927.31px;
+    }
+    img#productive-image{
+        width: 375px;
+    }
+    img#productive-img{
+        width: 320px;
+        height: 241px;
+        position: absolute;
+        left: 19.5px;
+        top: 93px;
+    }
+    p.productive-info-heading{
+        width: 259px;
+        height: 24px;
+        position: absolute;
+        left: 59px;
+        top: 401px;
+        font-size: 16px;
+        text-align: center;
+        line-height: 24px;
+    }
+    p.productive-info-text{
+        width: 320px;
+        height: 63px;
+        position: absolute;
+        left: 20px;
+        top: 449px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 21px;
+    }
+    p.productive-info-text.more{
+        top: 528px;
+    }
+    div.more-productive-details{
+        width: 130px;
+        height: 23px;
+        position: absolute;
+        left: 123px;
+        top: 627px;
+    }
+    p.more-productive-details-text{
+        width: 110px;
+        height: 16px;
+        font-size: 12px;
+        line-height: 16.34px;
+    }
+    div#rectangle{
+        width: 130px;
+        height: 1px;
+    }
+    img#more-productive-img{
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        left: -41px;
+        top: -3px;
+    }
+    div.testimonial{
+        width: 280px;
+        height: 170px;
+        position: absolute;
+        left: 48px;
+        top: 710px;
+    }
+    p#qt-mark{
+        width: 14px;
+        height: 54px;
+        position: absolute;
+        left: 25.96px;
+        top: -39px;
+    }
+    p#testimony{
+        width: 241.3px;
+        height: 73px;
+        position: absolute;
+        left: 25.96px;
+        top: 38px;
+        font-size: 10px;
+        line-height: 18px;
+        letter-spacing: 0.384615px;
+    }
+    div.profile{
+        width: 105px;
+        height: 27px;
+        position: absolute;
+        left: 25.96px;
+        top: 125px;
+    }
+    img#profile-img{
+        width: 24px;
+        height: 24px;
+        left: 0%;
+        top: 8px;
+    }
+    p.username{
+        width: 58px;
+        height: 12px;
+        left: 31.46px;
+        top: 0.57px;
+        font-size: 9px;
+        line-height: 12.26px;
+        letter-spacing: 0.45px;
+    }
+    p.user-rank{
+        width: 73px;
+        height: 12px;
+        left: 31.46px;
+        top: 14.47px;
+        font-size: 6px;
+        line-height: 11.8px;
+        letter-spacing: 0.3px;
+    }
+    div.cta{
+        width: 375px;
+        height: 345px;
+        top: 1788px;
+    }
+    p.cta-info-heading{
+        width: 195px;
+        height: 24px;
+        position: absolute;
+        /* left: 89px; */
+        top: -84px;
+        font-size: 18px;
+        line-height: 24px;
+        
+    }
+    p.cta-info-msg{
+        width: 280px;
+        height: 84px;
+        position: absolute;
+        left: -58px;
+        top: -30px;
+        font-size: 14px;
+        line-height: 21px;
+        text-align: center;
+    }
+    div.cta-form-input{
+        width: 240px;
+        height: 32px;
+        position: absolute;
+        left: -790px;
+        top: 110px;
+    }
+    div.cta-form-input > input#email-two{
+        width: 129.41px;
+        height: 12px;
+        position: absolute;
+        left: 11px;
+        top: 9px;
+    } 
+    div.cta-form-button{
+        width: 240px;
+        height: 32px;
+        position: absolute;
+        left: -790px;
+        top: 150px;
+    }
+    button#cta-form-button{
+        position: absolute;
+        left: 42px;
+        top: 10px;
+        text-align: center;
+        font-size: 10px;
+        line-height: 11.7px;
+    }
+    footer.footer{
+        width: 375px;
+        height: 590px;
+        top: 2130px;
+    }
+    div.contact-card > a#home > img{
+        width: 105px;
+        height: 30px;
+        position: absolute;
+        left: -35px;
+        top: -40px;
+    }
+    div.phone{
+        position: absolute;
+        left: -35px;
+        top: 20px;
+    }
+    div.email{
+        position: absolute;
+        left: -35px;
+        top: 60px;
+    }
+    div.our-company{
+        left: 45px;
+        top: 175px;
+    }
+    div.legal{
+        left: 45px;
+        top: 370px;
+    }
+    div.footer-icons{
+        width: 104px;
+        height: 27px;
+        left: 110px;
+        top: 550px;
+    }
+    div.fb-icon, div.tw-icon, div.in-icon{
+        width: 28.04px;
+    }
+    div.oval.fb-oval{
+        width: 27.06px;
+        height: 27px;
+    }
+    div.oval.tw-oval{
+        width: 27.06px;
+        height: 27px;
+    }
+    div.oval.in-oval{
+        width: 27.06px;
+        height: 27px;
+    }
+    img#tw-icon{
+        left: 44px;
+    }
+    img#in-icon{
+        left: 79px;
+    }
 }
