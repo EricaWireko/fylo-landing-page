@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 header#header{
     width: 1280px;
     height: 49px;
