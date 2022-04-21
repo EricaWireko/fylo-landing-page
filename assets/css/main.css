@@ -1,62 +1,113 @@
+
+/* /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    overflow-x: hidden;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
 }
-header#header{
-    width: 1280px;
+header{
+    width: 88.88%;
     height: 49px;
-    /* background-color: grey; */
-    position: absolute;
-    left: 80px;
-    top: 65px;
-    display: flex;
-    flex-direction: row;
-}
-div.logo{
-    width: 166px;
-    height: 49px;
-}
-div#nav-bar{
-    width: 271px;
-    height: 19px;
-    position: absolute;
-    left: 1005px;
-    top: 15px;
-}
- div > ul{
+    position: relative;
     display: flex;
     justify-content: space-between;
-    list-style-type: none;
+    top: 65px;
+    left: 80px;
+}
+div#nav{
+    width: 271px;
+    height: 19px;
     position: relative;
-    top: -15px;
+    top: 15.5px;
     font-size: 16px;
+    font-weight: 400;
     font-family: 'Raleway', sans-serif;
     line-height: 18.78px;
-    
 }
-a:hover{
-    cursor: pointer;
+div > ul{
+    display: flex;
+    justify-content: space-around;
 }
-a.nav-link{
+div > ul > li{
+    padding: 0 0 0 30px;
+}
+a{
     text-decoration: none;
     color: #07043B;
 }
-div#hero-section{
-    /* border: 1px solid green; */
-    width: 1280px;
-    height: 474px;
-    position: absolute;
-    left: 38px;
-    top: 260px;
+div#hero{
+    width: 88.88%;
+    height: 304px;
+    position: relative;
+    top: 116px;
+    left: 80px;
 }
-div > #hero-img{
-    width: 640px;
-    height: 474px;
+div.hero-image{
+    width: 440px;
+    height: 300px;
     position: absolute;
     left: 640px;
 }
-div.info{
-    width: 640px;
-    
+img#hero-img{
+    width: 100%;
+    height: 300px;
+}
+div.hero-info-group{
+    width: 740px;
+    height: 300px;
 }
 p.heading{
     width: 627px;
@@ -67,800 +118,584 @@ p.heading{
     font-weight: 700;
     line-height: 60px;
 }
-p.info-text{
+p.info{
     width: 585px;
     height: 72px;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 24px;
+    position: relative;
     font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.53125px;
+    margin-top: 15px;
 }
-form.user-info{
-    width: 536px;
+form.form-group{
+    width: 585px;
     height: 45px;
-    display: flex;
+    position: relative;
+    margin-top: 42px;
 }
-form > .form-input > input{
+input#email{
     width: 320px;
     height: 45px;
-    border: 1px solid #07043B;
-    border-radius: 3px;
-    color: #c2c2c2;
-    font-family: 'Open Sans', sans-serif;
-    line-height: 19px;
-    letter-spacing: 0.466667px;
-    padding-left: 20px; 
+    padding-left: 15px;
+    font-size: 14px;
 }
-
-button:hover{
-    cursor: pointer;
-}
-form > button{
+button#email-btn{
     width: 200px;
     height: 45px;
-    margin-left: 20px;
-    font-family: 'Raleway', sans-serif;
+    margin-left: 10px;
+    background: #2F65F8;
+    border-radius: 3.13px;
+    border: none;
     color: #fff;
-    background-color: #2F65F8;
-    border-color: #2F65F8;
-    border-radius: 3px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    
 }
 div.productive{
-    width: 1440px;
+    width: 100%;
     height: 838px;
-    position: absolute;
-    left: 0px;
-    top: 838px;
-    /* */
+    position: relative;
+    top: 230px;
 }
-div.more-productive{
-    background-color: #F8F8FE; 
-    /* border: 1px solid yellow; */
-    height: 724px;
+img#productive-image{
+    width: 100%;
+    height: 6.33%;
+}
+div.productive-content{
+    width: 100%;
+    height: 100%;
+    background-color: #F8F8FE;
     margin-top: -5px;
 }
-img#productive-img{
-    width: 542px;
-    height: 409px;
-    position: absolute;
-    left: 56.81%;
-    right: 5.56%;
-    bottom: 27.09%;
+img#productive-content-image{
+    width: 302px;
+    height: 241px;
+    position: relative;
+    top: 100px;
+    left: 818px;
 }
 p.productive-info-heading{
-    width: 648px;
+    width: 727px;
     height: 47px;
     position: absolute;
-    left: 80px;
     top: 178px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
+    left: 80px;
     font-size: 40px;
-    line-height: 46.96px;
+    text-align: center;
+    line-height: 24px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
 }
 p.productive-info-text{
     width: 529px;
     height: 48px;
-    position: absolute;
-    left: 80px;
-    top: 263px;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 24px;
+    position: absolute;
+    top: 238px;
+    left: 120px;
 }
 p.productive-info-text.more{
-    position: absolute;
-    top: 327px;
+    margin-top: 66px;
 }
-div.more-productive-details{
+div.productive-details{
     width: 166px;
     height: 27px;
     position: absolute;
-    left: 5.56%;
-    top: 46.54%;
-    bottom: 50.24%;
-    margin-top: 15px;
-    /* display: flex;
-    flex-direction: row-reverse; */
-    /* justify-content: space-around; */
+    top: 390px;
+    left: 120px;
+    display: flex;
+    flex-direction: row-reverse;
 }
-div.more-productive-details-img{
-    position: absolute;
-    left: 154px;
-    top: 7px;
+div.testimonial{
+    width: 356px;
+    height: 215px;
+    position: relative;
+    left: 120px;
+    top: 180px;
+    background-color: #fff;
+    box-shadow: 0px 0px 8px 4px rgba(56, 56, 56, 0.0458843);
 }
-img#more-productive-image{
-    width: 12px;
-    height: 12px; 
-    /* position: relative;
-    top: 5px;
-    right: 0px; */
-    /* margin-left: 3px; */
+img#productive-details-img{
+    margin-left: -35px;
 }
-p.more-productive-details-text{
-    width: 146px;
-    height: 22px;
-    position: absolute;
-    left: 0%;
-    right: 12.05%;
-    top: -50%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 21.79px;
-} 
-p.more-productive-details-text:hover{
-    cursor: pointer;
+p.productive-details-text{
+    width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
 }
 div#rectangle{
     width: 166px;
     height: 1px;
     background: #3DA08F;
     position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 96.3%;
-    bottom: 0%;
-
-}
-div.testimonial{
-    width: 356px;
-    height: 215px;
-    position: absolute;
-    left: 5.56%;
-    right: 69.72%;
-    top: 55.13%;
-    bottom: 19.21%;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px 5px rgba(56, 56, 56, 0.0458843);
-    border-radius: 5px;
+    top: 28px;
 }
 p#qt-mark{
-    width: 18px;
-    height: 68px;
-    position: absolute;
-    left: 9.2%;
-    right: 85.6%;
-    top: -25px;
-    font-family: 'Nunito Sans', sans-serif;
-    font-style: normal;
+    font-family: "Nunito Sans", sans-serif;
     font-size: 45px;
     font-weight: 400;
-    line-height: 67.5px;
-    color: #07043B;
+    line-height: 68px;
+    letter-spacing: 0px;
+    position: relative;
+    left: 33px;
+    top: 12px;
 }
-p#testimony{
+p#testimonial-text{
     width: 289px;
     height: 92px;
-    position: absolute;
-    left: 9.72%;
-    right: 9.55%;
-    top: 22.79%;
-    bottom: 34.42%;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
+    position: relative;
+    left: 33px;
+    bottom: 20px;
+    font-family: "Open Sans", sans-serif;
     font-size: 13px;
     font-weight: 400;
     line-height: 23px;
     letter-spacing: 0.5px;
-    color: #07043B;
-
 }
 div.profile{
     width: 137px;
     height: 32px;
-    position: absolute;
-    left: 9.2%;
-    right: 52.25%;
-    top: 73.02%;
-    bottom: 12.09%;
-    /* display: flex;
-    flex-direction: row; */
+    display: flex;
+    position: relative;
+    left: 33px;
 }
 img#profile-img{
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    left: 0%;
-    right: 76.64%;
-    top: 0%;
-    bottom: 0%;
     border-radius: 50%;
 }
-p.username{
-    width: 71px;
-    height: 15px;
-    position: absolute;
-    left: 29.2%;
-    right: 18.98%;
-    top: -10px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 11px;
+div.profile-info{
+    width: 100%;
+    margin-left: 8px;
+    font-family: "Open Sans", sans-serif;
     line-height: 15px;
-    letter-spacing: 0.55px;
-    color: #07043B;
+}
+p.username{
+    font-size: 11px;
+    font-weight: 700;
+    
+    letter-spacing: 0.550000011920929px;
+
 }
 p.user-rank{
-    width: 97px;
-    height: 15px;
-    position: absolute;
-    left: 29.2%;
-    right: 0%;
-    top: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 8px;
-    line-height: 15px;
-    letter-spacing: 0.4px;
-    color: #07043B;
+    font-weight: 400;
+    letter-spacing: 0.4000000059604645px;
 }
-div.cta{
-    width: 1440px;
-    height: 370px;
-    position: absolute;
-    left: 0px;
-    top: 1622px;
-    background-color: #575988;
+div.cta-section{
+    width: 100%;
+    height: 369.71px;
+    background: #575988;
+    position: relative;
+    top: 180px;
+    display: flex;
 }
-div.cta-info-group{
+div.cta-info-section{
     width: 533px;
     height: 137px;
-    position: absolute;
+    position: relative;
+    top: 100px;
     left: 80px;
-    top: 120px;
 }
 p.cta-info-heading{
     width: 347px;
     height: 48px;
-    position: absolute;
-    left: 0%;
-    right: 34.9%;
-    top: -32px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
-    color: #fff;
+    color: #FFFFFF;
     line-height: 48px;
 }
-p.cta-info-msg{
+p.cta-info-text{
     width: 533px;
     height: 72px;
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    top: 40px;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     letter-spacing: 0.5px;
-    color: #fff;
+    color: #FFFFFF;
+    margin-top: 17px;
 }
-div.cta-form-group{
+form.form-group.second{
     width: 480px;
     height: 112px;
-    position: absolute;
-    left: 840px;
-    top: 120px;
-}
-div.cta-form-input{
-    width: 480px;
-    height: 48px;
-    background-color: #fff;
-    color: #c0c0c0;
-    box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
-    border-radius: 3.125px;
-}
-div.cta-form-input > input{
-    width: 234px;
-    height: 14px;
-    position: absolute;
-    left: 4.5%;
-    right: 46.67%;
-    top: 16px;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14.09px;
-    border: 0px solid #fff;
-}
-div.cta-form-button{
-    width: 200px;
-    height: 48px;
-    position: absolute;
-    /* left: -20px;*/
-    top: 70px; 
-    background-color: #2F65F8;
-    box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
-    border-radius: 3.125px;
-}
-button#cta-form-button{
-    color: #fff;
-    text-align: center;
-    background: none;
-    border: none;
-    width: 156px;
-    height: 16px;
-    position: absolute;
-    left: 11%;
-    right: 11%;
-    top: 16px;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-}
-footer.footer{
-    width: 1440px;
-    height: 391px;
-    position: absolute;
-    left: 0px;
-    top: 1944px;
-    background-color: #07043b;
-}
-div.footer-icons{
-    width: 119.79px;
-    height: 31px;
-    position: absolute;
-    left: 1059px;
-    top: 170px;
+    position: relative;
+    top: 100px;
+    left: 227px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
 }
-div.oval{
-    width: 31.22px;
-    height: 31px;
-    border: 0.918357px solid #dfe4f0;
-    border-radius: 50%;
-    box-sizing: border-box;
+form.form-group.second > input#email{
+    width: 85%;
 }
-img#fb-icon{
-    /* width: 7.03px;
-    height: 14.73px; */
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    width: 24.8%;
-    top: 1px;
+form.form-group.second > button#email-btn{
+    margin: 16px 0 0 0px;
 }
-img#tw-icon{
-    position: absolute;
-    width: 18%;
-    top: 5px;
-    left: 49px;
+footer#footer{
+    width: 100%;
+    height: 391px;
+    position: relative;
+    top: 180px;
+    background: #07043B;
 }
-img#in-icon{
-    position: absolute;
-    width: 15%;
-    left: 91.4px;
-    top: 5px;
-}
-div.legal{
-    width: 81px;
-    height: 98px;
-    position: absolute;
-    left: 793px;
-    top: 150px;
-}
-div.legal > a{
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #fff;
-}
-p#terms{
-    width: 47px;
-    margin-top: 30px;
-}
-p#privacy{
-    width: 53px;
-    margin-top: 30px;
-}
-div.our-company{
-    width: 69px;
-    height: 136px;
-    position: absolute;
-    left: 524px;
-    top: 150px;
-}
-div.our-company > a{
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #fff;
-}
-p#about-us, p#jobs, p#press, p#blog{
-    margin-top: 20px;
-}
-div.contact-card{
+div.contact-info-group{
     width: 222px;
     height: 140px;
-    position: absolute;
-    left: 80px;
+    position: relative;
     top: 92px;
+    left: 80px;
+    color: #fff;
 }
-div.contact-card > a#home >img{
+img#logo-copy{
     width: 135px;
     height: 39px;
 }
-div.phone{
+div.contact-card{
     display: flex;
-    width: 222px;
-    height: 25px;
-    position: absolute;
-    left: 0%;
-    top: 70px;
+    flex-direction: row;
+    position: relative;
+    top: 37px;
 }
- div.ph-icon, div.email-icon{
+.contact-card-text{
+    margin: 0 0 25px 15px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+img#telephone-icon, img#email-icon{
     width: 24px;
     height: 24px;
-    position: absolute;
-    left: 0%;
-    /* right: 89.19%;
-    top: 80px; */
 }
-p.phone-number{
-    width: 182px;
-    height: 24px;
-    position: absolute;
-    left: 35px;
-    top: -18px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
+div.company-info-group{
+    width: 69px;
+    height: 136px;
+    position: relative;
+    left: 524px;
+    top: 70px;
+}
+div.company-info-group > p{
+    margin-bottom: 16px;
+}
+a#about-us, a#jobs, a#press, a#blog{
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
+    font-weight: 400;
     color: #fff;
-} 
-div.email{
+    line-height: 22px;
+    letter-spacing: 0px;
+    /* margin: 15px; */
+}
+div.legal-info-group{
+    width: 81px;
+    height: 98px;
+    position: relative;
+    left: 793px;
+    bottom: 70px;
+}
+div.legal-info-group > p{
+    margin-bottom: 16px;
+}
+a#contact-us, a#terms, a#privacy{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 22px;
+    letter-spacing: 0px;
+}
+div.footer-icons-group{
+    width: 139.79px;
+    height: 31px;
+    position: absolute;
+    left: 1059px;
+    bottom: 170px;
     display: flex;
-    width: 182px;
-    height: 25px;
-    position: absolute;
-    left: 0%;
-    top: 110px;
 }
-p.email{
-    width: 142px;
-    height: 42px;
-    position: absolute;
-    left: 35px;
-    top: -20px;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #fff;
+div.footer-icons-group > div.oval{
+    width: 31.22px;
+    height: 31px;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+    margin: 0 12.49px 0 0;
 }
-@media (min-width: 375px) and (max-width: 480px){
-    header#header{
-        width: 327px;
-        height: 24px;
-        position: absolute;
-        left: 24px;
-        top: 24px;
+img#fb-icon{
+    width: 40.33%;
+    position: relative;
+    left: 9px;
+    top: 5px;
+}
+img#tw-icon{
+    width: 63.33%;
+    position: relative;
+    left: 5.5px;
+    top: 5px;
+}
+img#in-icon{
+    width: 63.33%;
+    position: relative;
+    left: 5.5px;
+    top: 5px;
+}
+@media only screen and (min-width: 315px) and (max-width: 480px) {
+    html, body{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+        overflow-x: hidden; 
     }
-    div.logo{
-        width: 80px;
-        height: 24px;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-    }
-    a#home > img{
-        width: 72.29px;
-        height: 24px;
-    }
-    div#nav-bar{
-        width: 247px;
-        height: 24px;
-        position: absolute;
-        left: 80px;
-        top: 0px;
-    }
-    div#hero-section{
-        width: 320px;
-        height: 609px;
-        left: 21px;
-        top: 146px;
-    }
-    div > #hero-img{
-        width: 320px;
+   header#header{
+       width: 87.2%;
+       height: 24px;
+       position: relative;
+       left: 24px;
+       top: 24px;
+   }
+   img#top-logo{
+       width: 80px;
+   }
+   div > ul{
+       position: relative;
+       bottom: 15px;
+   }
+   a{
+       font-size: 12px;
+   }
+   div#hero{
+       width: 85.3%;
+       height: 609px;
+       position: relative;
+       top: 98px;
+       left: 28px;
+   }
+   div.hero-image{
+        width: 305px;
         height: 225px;
-        position: absolute;
-        left: 0px;
-        top: 0px;
-    }
-    p.heading{
-        width: 320px;
-        height: 108px;
-        position: absolute;
-        left: 0px;
-        top: 200px;
-        text-align: center;
+        position: relative;
+        left: 34px;
+   }
+   img#hero-img{
+        width: 100%;
+        height: 100%;
+        position: relative;
+   }
+   p.heading{
+        position: relative;
+        /* left: 23.5px; */
         font-size: 24px;
+        text-align: center;
+        width: 320px;
         line-height: 36px;
-    }
-    p.info-text{
+   }
+   p.info{
+        position: relative;
+        /* left: 39px; */
         width: 296px;
         height: 84px;
-        position: absolute;
-        left: 7.5px;
-        top: 375px;
         text-align: center;
         font-size: 14px;
         line-height: 21px;
     }
-    /* form.user-info{
-        width: 328px;
-        height: 96px;
-        position: absolute;
-        left: 28px;
-        top: 695px;
-        display: flex;
-        flex-direction: column;
-    } */
-    form > .form-input > input#email{
-        width: 280px;
-        height: 40px;
-        position: absolute;
-        left: 7.5px;
-        top: 490px;
-    }
-    form > button#email-btn{
+    form.form-group{
         width: 304px;
-        height: 44px;
-        position: absolute;
-        left: -12.5px;
-        top: 550px;
+        height: 120px;
     }
-    /* input#email{
-        width: 305px;
-        height: 40px;
-        position: absolute;
-        left: 38px;
-        top: 695px;
-    } */
+    input#email, button#email-btn{
+        width: 296px;
+        font-size: 12px;
+    }
+    input#email{
+        position: relative;
+        left: 8px;
+    }
+    button#email-btn{
+        margin-top: 16px;
+    }
     div.productive{
-        width: 375px;
+        width: 100%;
         height: 961px;
-        position: absolute;
-        left: 0px;
-        top: 827px;
     }
-    div.more-productive{
-        height: 927.31px;
-    }
-    img#productive-image{
-        width: 375px;
-    }
-    img#productive-img{
-        width: 320px;
-        height: 241px;
-        position: absolute;
-        left: 19.5px;
+    img#productive-content-image{
+        position: relative;
+        left: 33px;
         top: 93px;
     }
     p.productive-info-heading{
-        width: 259px;
+        width: 80%;
         height: 24px;
-        position: absolute;
-        left: 59px;
-        top: 401px;
+        position: relative;
+        top: 187px;
+        left: 33px;
         font-size: 16px;
         text-align: center;
-        line-height: 24px;
+        /* line-height: 24px; */
     }
     p.productive-info-text{
+        font-size: 14px;
         width: 320px;
         height: 63px;
-        position: absolute;
-        left: 20px;
-        top: 449px;
-        font-size: 14px;
-        text-align: center;
         line-height: 21px;
+        position: relative;
+        top: 204px;
+        left: 20px;
+        text-align: center;
     }
     p.productive-info-text.more{
-        top: 528px;
+        margin-top: 16px;
     }
-    div.more-productive-details{
+    div.productive-details{
         width: 130px;
         height: 23px;
-        position: absolute;
-        left: 123px;
-        top: 627px;
+        position: relative;
+        top: 227px;
+        left: 108px;
     }
-    p.more-productive-details-text{
+    img#productive-details-img{
+        width: 16px;
+        height: 16px;
+        position: relative;
+        top: 5px;
+        left: 5px;
+    }
+    p.productive-details-text{
+        position: relative;
+        right: 30px;
+        font-size: 12px;
         width: 110px;
         height: 16px;
-        font-size: 12px;
-        line-height: 16.34px;
     }
     div#rectangle{
         width: 130px;
-        height: 1px;
-    }
-    img#more-productive-img{
-        width: 12px;
-        height: 12px;
-        position: absolute;
-        left: -41px;
-        top: -3px;
     }
     div.testimonial{
         width: 280px;
         height: 170px;
-        position: absolute;
-        left: 48px;
-        top: 710px;
+        position: relative;
+        left: 43px;
+        top: 261px;
     }
     p#qt-mark{
+        font-size: 35.39px;
         width: 14px;
         height: 54px;
-        position: absolute;
-        left: 25.96px;
-        top: -39px;
+        position: relative;
+        top: 0px;
     }
-    p#testimony{
+    p#testimonial-text{
+        position: relative;
+        bottom: 25px;
         width: 241.3px;
         height: 73px;
-        position: absolute;
-        left: 25.96px;
-        top: 38px;
         font-size: 10px;
-        line-height: 18px;
-        letter-spacing: 0.384615px;
     }
     div.profile{
         width: 105px;
         height: 27px;
-        position: absolute;
-        left: 25.96px;
-        top: 125px;
-    }
-    img#profile-img{
-        width: 24px;
-        height: 24px;
-        left: 0%;
-        top: 8px;
     }
     p.username{
-        width: 58px;
-        height: 12px;
-        left: 31.46px;
-        top: 0.57px;
         font-size: 9px;
-        line-height: 12.26px;
-        letter-spacing: 0.45px;
     }
     p.user-rank{
+        font-size: 6px;
         width: 73px;
         height: 12px;
-        left: 31.46px;
-        top: 14.47px;
-        font-size: 6px;
-        line-height: 11.8px;
-        letter-spacing: 0.3px;
+        letter-spacing: 0px;
     }
-    div.cta{
-        width: 375px;
+    div.cta-section{
+        width: 100%;
         height: 345px;
-        top: 1788px;
+        position: relative;
+        top: 290px;
+        display: flex;
+        flex-direction: column;
     }
     p.cta-info-heading{
-        width: 195px;
+        width: 100%;
         height: 24px;
-        position: absolute;
-        /* left: 89px; */
-        top: -84px;
         font-size: 18px;
-        line-height: 24px;
-        
+        position: relative;
+        bottom: 54px;
     }
-    p.cta-info-msg{
+    p.cta-info-text{
         width: 280px;
         height: 84px;
-        position: absolute;
-        left: -58px;
-        top: -30px;
         font-size: 14px;
         line-height: 21px;
         text-align: center;
+        position: relative;
+        bottom: 38px;
+        right: 40px;
     }
-    div.cta-form-input{
+    form.form-group.second{
+        position: relative;
+        left: 50px;
+        top: 54px;
+    }
+    form.form-group.second > input#email{
         width: 240px;
         height: 32px;
-        position: absolute;
-        left: -790px;
-        top: 110px;
-    }
-    div.cta-form-input > input#email-two{
-        width: 129.41px;
-        height: 12px;
-        position: absolute;
-        left: 11px;
-        top: 9px;
-    } 
-    div.cta-form-button{
-        width: 240px;
-        height: 32px;
-        position: absolute;
-        left: -790px;
-        top: 150px;
-    }
-    button#cta-form-button{
-        position: absolute;
-        left: 42px;
-        top: 10px;
-        text-align: center;
         font-size: 10px;
-        line-height: 11.7px;
+        line-height: 11.74px;
     }
-    footer.footer{
-        width: 375px;
+    form.form-group.second > button#email-btn{
+        position: relative;
+        left: 5px;
+        width: 240px;
+        height: 32px;
+        font-size: 10px;
+        line-height: 11.74px;
+    }
+    footer#footer{
+        width: 100%;
         height: 590px;
-        top: 2130px;
+        position: relative;
+        top: 290px;
     }
-    div.contact-card > a#home > img{
+    img#logo-copy{
         width: 105px;
         height: 30px;
-        position: absolute;
-        left: -35px;
-        top: -40px;
+        position: relative;
+        right: 40px;
+        bottom: 15px;
     }
-    div.phone{
-        position: absolute;
-        left: -35px;
-        top: 20px;
+    div.contact-card{
+        position: relative;
+        right: 40px;
+        top: 32px;
     }
-    div.email{
-        position: absolute;
-        left: -35px;
-        top: 60px;
+    div.company-info-group{
+        width: 69px;
+        height: 136px;
+        position: relative;
+        left: 39px;
+        top: 126px;
     }
-    div.our-company{
-        left: 45px;
-        top: 175px;
+    div.legal-info-group{
+        width: 81px;
+        height: 98px;
+        position: relative;
+        left: 39px;
+        top: 146px;
     }
-    div.legal{
-        left: 45px;
-        top: 370px;
+    div.footer-icons-group{
+        position: relative;
+        left: 139px;
+        top: 169px;
     }
-    div.footer-icons{
-        width: 104px;
-        height: 27px;
-        left: 110px;
-        top: 550px;
-    }
-    div.fb-icon, div.tw-icon, div.in-icon{
-        width: 28.04px;
-    }
-    div.oval.fb-oval{
-        width: 27.06px;
-        height: 27px;
-    }
-    div.oval.tw-oval{
-        width: 27.06px;
-        height: 27px;
-    }
-    div.oval.in-oval{
-        width: 27.06px;
-        height: 27px;
-    }
-    img#tw-icon{
-        left: 44px;
-    }
-    img#in-icon{
-        left: 79px;
-    }
+}
+@media only screen and (min-width: 640px) and (max-width: 960px){
+    
 }
